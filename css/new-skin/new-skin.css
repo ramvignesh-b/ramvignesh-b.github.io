@@ -1322,10 +1322,6 @@ input[type="file"] {
 /*
 	Contacts
 */
-.content.contacts .map {
-	margin-bottom: 30px;
-	height: 240px;
-}
 
 .contact_form .row p {
 	display: none;
