@@ -1039,3 +1039,14 @@ div .post-box h1, div .post-box div{
 	padding: 10px;
 }
 
+form input{
+	padding: 20px;
+	margin-top: 10px;
+}
+form textarea{
+	padding: 20px;
+	margin-top: 10px;
+}
+form button{
+	margin-top: 10px;
+}
