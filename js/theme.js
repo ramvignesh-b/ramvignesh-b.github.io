@@ -6,8 +6,8 @@ function toggle() {
     document.getElementById('port').style.backgroundImage="url('images/port_in..png')";
     document.getElementById('contrast').innerHTML="Light Mode";
     items = document.querySelectorAll('img');
-    for(item in items){
-      items[item].style.filter = "invert(1)";
+    for(var i=0; i<items.length; i++){
+      items[i].style.filter = "invert(1)";
     }    
   }
   else{
@@ -15,8 +15,8 @@ function toggle() {
     document.getElementById('port').style.backgroundImage="url('images/port.png')";
     document.getElementById('contrast').innerHTML="Dark Mode";
     items = document.querySelectorAll('img');
-    for(item in items){
-      items[item].style.filter = "none";
+    for(var i=0; i<items.length; i++){
+      items[i].style.filter = "none";
     }
   }
 }
