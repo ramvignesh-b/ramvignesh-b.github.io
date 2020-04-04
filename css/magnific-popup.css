@@ -9,7 +9,10 @@
   position: fixed;
   background: #0b0b0b;
   opacity: 0.8; }
-
+.popup-box .content{
+  background-color: #fff;
+  padding: 0px 5%;
+}
 .mfp-wrap {
   top: 0;
   left: 0;
