@@ -9,7 +9,7 @@
 	<meta name="description" content="RV's personal website" />
 	<meta name="keywords" content="RamVignesh, ramvigneshgreat, ramvignesh.me, www.ramvignesh.me" />
 	<meta name="author" content="RamVignesh B." />
-	
+	<script src="js/lazysizes.min.js" async></script>
 	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin/>
 	<link
 		href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
@@ -29,9 +29,7 @@
 	<!-- <link  type="text/css" rel="stylesheet" href="css/window.css" /> -->
 	<link  type="text/css" rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
 	<link type="text/css" rel="stylesheet" href="css/style.css">
-	<style>
-		a i{ font-size: 58px; }
-	</style>
+
 </head>
 
 <body>
@@ -146,20 +144,15 @@
 				</div>
 
 			</div>
-			<!-- Card - About-->
+			<!-- About-->
 
 			<div class="card-inner animated active" id="about-card">
 				<div class="card-wrap">
 
-					<!-- 
-						About 
-					-->
 					<div class="content about">
 
-						<!-- title -->
 						<div class="title">About Me</div>
 
-						<!-- content -->
 						<div class="row">
 							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
 								<div class="text-box">
@@ -199,13 +192,10 @@
 					</div>
 					<div class="content services">
 
-						<!-- title -->
 						<div class="title">What I do</div>
 
-						<!-- content -->
 						<div class="row service-items border-line-v">
 
-							<!-- service item -->
 							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
 								<div class="service-item">
 									<div class="icon"><span class="fad fa-laptop-code"></span></div>
@@ -217,7 +207,6 @@
 								</div>
 							</div>
 
-							<!-- service item -->
 							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
 								<div class="service-item">
 									<div class="icon"><span class="fad fa-code"></span></div>
@@ -229,7 +218,6 @@
 								</div>
 							</div>
 
-							<!-- service item -->
 							<div class="col col-d-6 col-t-6 col-m-12">
 								<div class="service-item">
 									<div class="icon"><span class="fad fa-palette"></span></div>
@@ -241,7 +229,6 @@
 								</div>
 							</div>
 
-							<!-- service item -->
 							<div class="col col-d-6 col-t-6 col-m-12">
 								<div class="service-item">
 									<div class="icon"><span class="fad fa-chalkboard-teacher"></span></div>
@@ -264,23 +251,16 @@
 			</div>
 
 			<!--
-				Card - Resume
+				Resume
 			-->
 			<div class="card-inner" id="resume-card">
 				<div class="card-wrap">
 
-					<!--
-						Resume
-					-->
 					<div class="content resume">
 
-						<!-- title -->
 						<div class="title">Resume</div>
 
-						<!-- content -->
 						<div class="row">
-
-							<!-- projects -->
 							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
 								<div class="resume-title border-line-h">
 									<div class="icon"><i class="ion ion-briefcase"></i></div>
@@ -361,13 +341,9 @@
 					-->
 					<div class="content skills">
 
-						<!-- title -->
 						<div class="title">My Skills</div>
 
-						<!-- content -->
 						<div class="row">
-
-							<!-- skill item -->
 							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
 								<div class="skills-list">
 									<div class="skill-title border-line-h">
@@ -415,7 +391,6 @@
 								</div>
 							</div>
 
-							<!-- skill item -->
 							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
 								<div class="skills-list">
 									<div class="skill-title border-line-h">
@@ -465,7 +440,7 @@
 
 
 
-							<!-- skill item -->
+							<!-- Soft skills -->
 							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
 								<div class="skills-list list">
 									<div class="skill-title border-line-h">
@@ -492,6 +467,7 @@
 								</div>
 							</div>
 
+							<!-- Hobbies -->
 							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
 								<div class="skills-list list">
 									<div class="skill-title border-line-h">
@@ -527,17 +503,13 @@
 			</div>
 
 			<!--
-				Card - Works
+				Works
 			-->
 			<div class="card-inner" id="works-card">
 				<div class="card-wrap">
 
-					<!--
-						Works
-					-->
 					<div class="content works" id="no-invert">
 
-						<!-- title -->
 						<div class="title">Some of my Works</div>
 						<!-- filters -->
 						<div class="filter-menu filter-button-group">
@@ -562,14 +534,12 @@
 						<div class="row grid-items border-line-v">
 							<div class="popup-gallery">
 
-
-								<!-- work item photo -->
 								<div class="col col-d-6 col-t-6 col-m-12 grid-item photo border-line-h ">
 									<div class="box-item">
 										<div class="image popup-gallery">
 											<a href="images/works/wall.jpg" class="has-popup-image">
-												<img src="images/works/dr.jpg" width="150px" height="150px" alt=""
-													class="noin" />
+												<img data-src="images/works/dr.jpg" width="150px" height="150px" alt=""
+													class="noin lazyload" />
 												<span class="info">
 													<span class="ion ion-image"></span>
 												</span>
@@ -586,8 +556,8 @@
 									<div class="box-item">
 										<div class="image">
 											<a href="images/works/logos.jpg"  class="has-popup-image">
-												<img src="images/works/logo_me(alt1) dark.jpg" width="150px"
-													height="150px" alt="" />
+												<img data-src="images/works/logo_me(alt1) dark.jpg" width="150px"
+													height="150px" alt="" class="lazyload"/>
 												<span class="info">
 													<span class="ion ion-image"></span>
 												</span>
@@ -600,13 +570,12 @@
 									</div>
 								</div>
 
-								<!-- work item video -->
 								<div class="col col-d-6 col-t-6 col-m-12 grid-item video border-line-h">
 									<div class="box-item">
 										<div class="image">
 											<a href="images/promo_web.mp4" class="has-popup-video">
 												<img src="images/works/psg_video.jpg" width="150px" height="150px"
-													alt="" />
+													alt=""  />
 												<span class="info">
 													<span class="ion ion-videocamera"></span>
 												</span>
@@ -620,7 +589,6 @@
 									</div>
 								</div>
 
-								<!-- work item design -->
 								<div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
 									<div class="box-item">
 										<div class="image">
@@ -674,10 +642,6 @@
 								</div>
 							</div>
 
-							<!-- work item photo -->
-
-
-							<!-- work item music -->
 							<div class="col col-d-6 col-t-6 col-m-12 grid-item music border-line-h">
 								<div class="box-item">
 									<div class="image">
@@ -730,7 +694,8 @@
 									</div>
 								</div>
 							</div>
-							<!-- work item video -->
+
+
 							<div class="col col-d-6 col-t-6 col-m-12 grid-item video border-line-h">
 								<div class="box-item">
 									<div class="image">
@@ -749,7 +714,6 @@
 								</div>
 							</div>
 
-							<!-- work item design -->
 							<div class="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
 								<div class="box-item">
 									<div class="image">
@@ -830,7 +794,7 @@
 								<div class="box-item">
 									<div class="image">
 										<a href="#popup-3" class="has-popup-media">
-											<img src="images/works/git.jpg" alt="" />
+											<img data-src="images/works/git.jpg" alt=""  class="lazyload"/>
 											<span class="info">
 												<span class="ion ion-code"></span>
 											</span>
@@ -843,7 +807,7 @@
 									<div id="popup-3" class="popup-box mfp-fade mfp-hide">
 										<div class="content">
 											<div class="image">
-												<img src="images/works/git.jpg" alt="">
+												<img data-src="images/works/git.jpg" alt=""  class="lazyload">
 											</div>
 											<div class="desc">
 												<div class="post-box">
@@ -904,21 +868,11 @@
 			</div>
 
 
-			<!--
-				Card - Contacts
-			-->
+
 			<div class="card-inner contacts" id="contacts-card">
 				<div class="card-wrap">
-
-					<!--
-						Conacts Info
-					-->
 					<div class="content contacts">
-
-						<!-- title -->
 						<div class="title">Get in Touch</div>
-
-						<!-- content -->
 						<div class="row">
 							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
 								<div class="info-list">
@@ -983,15 +937,11 @@
 						</div>
 						  
 					<br>
-					<!--
-						Contact Form
-					-->
+
 					<div class="content contacts">
 
-						<!-- title -->
 						<div class="title">Contact Form</div>
 
-						<!-- content -->
 						<div class="row">
 							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
 								<!-- <div class="contact_form">
