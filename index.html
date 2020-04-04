@@ -20,9 +20,9 @@
 	<!-- <link type="text/css"  rel="stylesheet" href="css/text.css" />
 	<link type="text/css"  rel="stylesheet" href="css/basic.css" />
 	<link type="text/css"  rel="stylesheet" href="css/layout.css" />
-	<link  type="text/css" rel="stylesheet" href="css/ionicons.css" />
+	<link  type="text/css" rel="stylesheet" href="css/ionicons.css" /> -->
 	<link  type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
-	<link  type="text/css" rel="stylesheet" href="css/animate.css" />
+<!--<link  type="text/css" rel="stylesheet" href="css/animate.css" />
 	<link type="text/css"  rel="stylesheet" href="css/owl.carousel.css" />
 	<link type="text/css"  rel="stylesheet" href="css/gradient.css"/>
 	<link type="text/css"  rel="stylesheet" href="css/new-skin/new-skin.css" />
@@ -47,6 +47,16 @@
 		</div>
 	</div>
 	<div class="page new-skin">
+		<div style="position: fixed; top: 20%; right: 1%; z-index: 300;">
+			<ul>
+			<li>
+				<a onclick="toggle()">
+					<span class="icon ion-contrast"></span>
+					<span class="link" id="contrast" style="font-size: 10px;">Dark Mode</span>
+				</a>
+			</li>
+		</ul>
+		</div>
 		<!-- background -->
 		<div class="background gradient">
 			<ul class="bg-bubbles">
@@ -91,6 +101,7 @@
 								<span class="link">Contact</span>
 							</a>
 						</li>
+						
 						<li>
 							<a onclick="toggle()">
 								<span class="icon ion-contrast"></span>
@@ -101,6 +112,7 @@
 				</div>
 
 			</header>
+			
 			<div class="card-started" id="home-card">
 				<div class="profile no-photo">
 					<div class="slide" id="port"
@@ -701,7 +713,7 @@
 							<div class="col col-d-6 col-t-6 col-m-12 grid-item video border-line-h">
 								<div class="box-item">
 									<div class="image">
-										<a href="images/documentary.mp4" class="has-popup-video">
+										<a href="https://www.youtube.com/watch?v=4MT892CmdPE" class="has-popup-video">
 											<img src="images/works/docum.jpg" alt="" />
 											<span class="info">
 												<span class="ion ion-videocamera"></span>
@@ -709,7 +721,7 @@
 										</a>
 									</div>
 									<div class="desc">
-										<a href="images/documentary.mp4" class="name has-popup-video">PEC
+										<a href="https://www.youtube.com/watch?v=4MT892CmdPE" class="name has-popup-video">PEC
 											Documentary</a>
 										<div class="category">Video</div>
 									</div>
@@ -796,7 +808,7 @@
 								<div class="box-item">
 									<div class="image">
 										<a href="#popup-3" class="has-popup-media">
-											<img data-src="images/works/git.jpg" alt="" class="lazyload" />
+											<img src="images/works/git.jpg" alt="" class="" />
 											<span class="info">
 												<span class="ion ion-code"></span>
 											</span>
@@ -809,7 +821,7 @@
 									<div id="popup-3" class="popup-box mfp-fade mfp-hide">
 										<div class="content">
 											<div class="image">
-												<img data-src="images/works/git.jpg" alt="" class="lazyload">
+												<img src="images/works/git.jpg" alt="" class="">
 											</div>
 											<div class="desc">
 												<div class="post-box">
@@ -999,13 +1011,15 @@
 							</div>
 
 						</div>
-
+						<div class="title">Contact Form</div>
 					</div>
-
+					
 				</div>
 			</div>
-
+			
 		</div>
+
+
 	</div>
 
 	<!--Scripts-->
