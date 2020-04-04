@@ -13,19 +13,12 @@ $(window).on("load", function() {
 
 $(function () {
 	'use strict';
-	
-	
-	/*
-		Vars
-	*/
+
 	
 	var width = $(window).width();
 	var height = $(window).height();
 	
-	
-	/*
-		Header Menu Desktop
-	*/
+
 	
 	var container = $('.container');
 	var card_items = $('.card-inner');
@@ -48,7 +41,7 @@ $(function () {
 			/* if desktop */
 			if(!menu_item.hasClass('active') & (width > 1023) & $('#home-card').length) {
 
-				/* close card items */
+
 				menu_items.removeClass('active');
 				container.find(card_items).removeClass('animated '+animation_in);
 
@@ -56,7 +49,7 @@ $(function () {
 					container.find(card_items).addClass('animated '+animation_out);
 				}
 
-				/* open card item */
+
 				menu_item.addClass('active');
 				container.addClass('opened');
 				container.find(card_item).removeClass('animated '+animation_out);
@@ -71,7 +64,7 @@ $(function () {
 		/* if mobile */
 		if((width < 1024) & $('#home-card').length) {
 
-			/* scroll to section */
+
 			$('body,html').animate({
 				scrollTop: h - 76
 			}, 800);
@@ -148,19 +141,12 @@ $(function () {
 		});
 	}
 	
-	
-	/*
-		Hire Button
-	*/
-	
+
 	$('.lnks').on('click', '.lnk.discover', function(){
 		$('.top-menu a[href="#contacts-card"]').trigger('click');
 	});
 	
-	
-	/*
-		Initialize Portfolio
-	*/
+
 	var $container = $('.grid-items');
 	$container.imagesLoaded(function() {
 		$container.isotope({
@@ -171,7 +157,7 @@ $(function () {
 
 
 	/*
-		Filter items on button click
+		Filter items
 	*/
 	$('.filter-button-group').on( 'click', '.f_btn', function() {
 		var filterValue = $(this).find('input').val();
@@ -180,10 +166,7 @@ $(function () {
 		$(this).addClass('active');
 	});
 
-	
-	/*
-		Gallery popup
-	*/
+
 	if(/\.(?:jpg|jpeg|gif|png)$/i.test($('.gallery-item:first a').attr('href'))){
 		$('.gallery-item a').magnificPopup({
 			gallery: {
@@ -246,10 +229,7 @@ $(function () {
 		}
 	});
 
-	
-	/*
-		Music popup
-	*/
+
 	$('.has-popup-music').magnificPopup({
 		disableOn: 700,
 		type: 'iframe',
@@ -282,78 +262,7 @@ $(function () {
 	});
 	
 	
-	/*
-		Validate Contact Form
-	*/
-	
-	$("#cform").validate({
-		ignore: ".ignore",
-		rules: {
-			name: {
-				required: true
-			},
-			message: {
-				required: true
-			},
-			email: {
-				required: true,
-				email: true
-			},
-			hiddenRecaptcha: {
-				required: function () {
-					if (grecaptcha.getResponse() == '') {
-						return true;
-					} else {
-						return false;
-					}
-				}
-			}
-		},
-		success: "valid",
-		submitHandler: function() {
-			$.ajax({
-				url: 'mailer/feedback.php',
-				type: 'post',
-				dataType: 'json',
-				data: 'name='+ $("#cform").find('input[name="name"]').val() + '&email='+ $("#cform").find('input[name="email"]').val() + '&message=' + $("#cform").find('textarea[name="message"]').val(),
-				beforeSend: function() {
-				
-				},
-				complete: function() {
-				
-				},
-				success: function(data) {
-					$('#cform').fadeOut();
-					$('.alert-success').delay(1000).fadeIn();
-				}
-			});
-		}
-	});
-	
-	
-	/*
-		Validate Commect Form
-	*/
-	
-	$("#comment_form").validate({
-		rules: {
-			name: {
-				required: true
-			},
-			message: {
-				required: true
-			}
-		},
-		success: "valid",
-		submitHandler: function() {
-		}
-	});
-	
-
-
-	/*
-		Tesimonials Carousel
-	*/
+/* 
 	var revs_slider = $(".revs-carousel.default-revs .owl-carousel");
 
 	revs_slider.owlCarousel({
@@ -381,7 +290,7 @@ $(function () {
 		rewind: false,
 		nav: false,
 		dots: true
-	});
+	}); */
 
 
 	/*
@@ -389,9 +298,6 @@ $(function () {
 	*/
 
 	$(window).on('resize', function(){
-		/*
-			Dotted Skills Line On Resize Window
-		*/
 
 		var skills_dotted = $('.skills-list.dotted .progress');
 		var skills_dotted_w = skills_dotted.width();
@@ -399,17 +305,10 @@ $(function () {
 			skills_dotted.find('.percentage .da').css({'width':skills_dotted_w+1});
 		}
 
-		/*
-			Testimonials Carousel On Resize Window
-		*/
-
 		var revs_slider = $(".revs-carousel .owl-carousel");
 		revs_slider.find('.revs-item').css({'max-width':revs_slider.width()});
 	});
 
-	/*
-		Dotted Skills Line
-	*/
 
 	function skills(){
 		var skills_dotted = $('.skills-list.dotted .progress');
@@ -422,18 +321,12 @@ $(function () {
 	}
 	setTimeout(skills, 1000);
 
-	/*
-		Circle Skills Line
-	*/
 
 	var skills_circles = $('.skills-list.circles .progress');
 	if(skills_circles.length){
 		skills_circles.append('<div class="slice"><div class="bar"></div><div class="fill"></div></div>');
 	}
 
-	/*
-		Wrap First Title Word
-	*/
 
 	$('.content .title').each(function(index) {
 	    var title = $(this).text().split(' ');
