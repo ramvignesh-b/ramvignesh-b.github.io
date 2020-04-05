@@ -19,7 +19,7 @@ function toggle() {
     document.getElementById('logoo2').setAttribute("href","images/works/logos_in.jpg");
     for(var i=0; i<items.length; i++){
       items[i].style.filter = "invert(1)";
-    }    
+    }     
   }
   else{
     document.querySelector('*').style.filter="none";
