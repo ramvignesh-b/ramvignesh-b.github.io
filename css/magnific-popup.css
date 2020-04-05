@@ -13,6 +13,9 @@
   background-color: #fff;
   margin: auto 5%;
 }
+.popup-box .content .image img{
+  width: 100%;
+}
 .mfp-wrap {
   top: 0;
   left: 0;
@@ -62,7 +65,10 @@
   cursor: -moz-zoom-out;
   cursor: -webkit-zoom-out;
   cursor: zoom-out; }
-
+.mfp-close{
+  color:white !important;
+  
+}
 .mfp-zoom {
   cursor: pointer;
   cursor: -webkit-zoom-in;
